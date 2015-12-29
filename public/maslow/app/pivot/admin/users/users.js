@@ -5,18 +5,22 @@
 
 angular.module('piramidApp.usersAdmin',['ngRoute'])
 
-.config(['$routeProvider', function($routeProvider) {
+    .config(['$routeProvider', function($routeProvider) {
+
         $routeProvider.when(
-            '/users', {
-                templateUrl: 'users/userss.html',
+            '/admin/users', {
+                templateUrl: 'pivot/admin/users/users.html',
                 controller: 'UsersAdminCtrl'
-            }
-        )
+            });
+        $routeProvider.otherwise({
+            templateUrl: 'home.html'
+        });
     }]
 )
 
-.controller('UsersAdminCtrl', ['$scope','$http','$location',function($scope,$http,$location){
-        $cope.new_users = [];
+    .controller('UsersAdminCtrl', ['$scope','$http','$location',function($scope,$http,$location){
+        $scope.data = {};
+        $scope.new_users = [];
         $scope.selected_idx;
     }]
 )
