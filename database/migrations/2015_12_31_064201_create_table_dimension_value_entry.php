@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUsersTable extends Migration
+class CreateTableDimensionValueEntry extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,11 @@ class CreateUsersTable extends Migration
      */
     public function up()
     {
-        Schema::create('users', function (Blueprint $table) {
+        Schema::create('dimension_value_entry', function(Blueprint $table){
             $table->increments('id');
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('password', 60);
-            $table->rememberToken();
+            $table->enum('entry_type',['employee','user']);
+            $table->integer('dimension_code');
+            $table->integer('dimension_value');
             $table->timestamps();
         });
     }
@@ -29,6 +28,6 @@ class CreateUsersTable extends Migration
      */
     public function down()
     {
-        Schema::drop('users');
+        Schema::drop('dimension_value_entry');
     }
 }
