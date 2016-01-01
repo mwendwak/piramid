@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', true),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/maslow',
+    'url' => 'http://localhost:8000/maslow/app/pivot.html',
 
     /*
     |--------------------------------------------------------------------------
