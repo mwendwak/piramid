@@ -1,6 +1,5 @@
 <?php
 
-namespace piramid;
 
 class Employee extends PiramidModel
 {

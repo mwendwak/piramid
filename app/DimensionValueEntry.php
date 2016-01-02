@@ -1,6 +1,5 @@
 <?php
 
-namespace piramid;
 
 class DimensionValueEntry extends PiramidModel
 {

@@ -6,7 +6,6 @@
  * Time: 3:40 PM
  */
 
-namespace piramid;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Validation\Validator;

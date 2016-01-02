@@ -1,7 +1,5 @@
 <?php
 
-namespace piramid;
-
 class DimensionCode extends PiramidModel
 {
     private $rules = [
