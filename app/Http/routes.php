@@ -11,11 +11,4 @@
 |
 */
 
-Route::get('/', 'PiramidController@defaultRoute');
-/*
-Route::group(['prefix' => 'admin'], function() {
-    Route::get('users', function(){
 
-    });
-});
-*/

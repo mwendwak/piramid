@@ -16,10 +16,15 @@
     },
     "autoload": {
         "classmap": [
-            "database"
+            "database",
+            "app/PiramidWare/Controllers",
+            "app/PiramidWare/Models",
+            "app/PiramidWare/Repositories"
         ],
         "psr-4": {
-            "piramid\\": "app/"
+            "piramid\\": "app/",
+            "PiramidWare\\":"app/PiramidWare",
+            "PiramidWare\\Models\\":"app/PiramidWare/Models"
         }
     },
     "autoload-dev": {

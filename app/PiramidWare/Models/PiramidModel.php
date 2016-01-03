@@ -5,14 +5,15 @@
  * Date: 12/29/2015
  * Time: 3:40 PM
  */
-
+namespace PiramidWare\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Contracts\Validation\Validator;
 
 class PiramidModel extends Model
 {
-    public function validate(){
+    public function validate()
+    {
         $validEntry = Validator::make($this->attributes, $this->rules);
 
         if ($validEntry->passes()) return true;

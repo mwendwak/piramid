@@ -1,4 +1,5 @@
 <?php
+namespace PiramidWare\Models;
 
 class DimensionCode extends PiramidModel
 {
