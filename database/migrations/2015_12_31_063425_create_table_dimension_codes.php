@@ -19,7 +19,6 @@ class CreateTableDimensionCodes extends Migration
             $table->text('description');
             $table->boolean('blocked');
             $table->integer('dimension_value')->unsigned();
-            $table->foreign('dimension_value')->references('id')->on('users');
             $table->timestamps();
         });
     }

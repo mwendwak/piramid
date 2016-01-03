@@ -21,7 +21,6 @@ class CreateTableDimensionValues extends Migration
             $table->text('totaling');
             $table->boolean('blocked');
             $table->integer('dimension_code')->unsigned();
-            $table->foreign('dimension_code')->references('id')->on('dimension_codes')->onDelete('cascade');
             $table->timestamps();
         });
     }
