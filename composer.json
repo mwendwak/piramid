@@ -23,7 +23,6 @@
         ],
         "psr-4": {
             "piramid\\": "app/",
-            "PiramidWare\\":"app/PiramidWare",
             "PiramidWare\\Models\\":"app/PiramidWare/Models"
         }
     },
